@@ -520,7 +520,7 @@ socket.on('noSchoolCodeFound', modal => {
 });
 
 socket.on('creationSuccesful', modal => {
-  window.location('https://trinitycapitalsimulation.netlify.app/');
+  window.location.replace('https://trinitycapitalsimulation.netlify.app/');
 });
 const firstNameInput = document.querySelector('.firstNameInput');
 const lastNameInput = document.querySelector('.lastNameInput');
