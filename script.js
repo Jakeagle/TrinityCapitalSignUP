@@ -509,8 +509,8 @@ window.addEventListener('beforeunload', function (e) {
 */
 
 //*******************************Server Functions***********************************/
-const socket = io('http://localhost:3000');
-const createAccountURL = 'http://localhost:3000/createAccount';
+const socket = io('https://trinitycapitaltestserver-2.azurewebsites.net');
+const createAccountURL = 'https://trinitycapitaltestserver-2.azurewebsites.net/createAccount';
 const errorModal = document.querySelector('.errorModal');
 const tryAgain = document.querySelector('.tryAgainBTN');
 
