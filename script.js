@@ -22,11 +22,6 @@ document.addEventListener('keydown', function (e) {
 
 ///////////////////////////////////////
 // Button scrolling
-if (btnScrollTo && section1) {
-  btnScrollTo.addEventListener('click', function (e) {
-    section1.scrollIntoView({ behavior: 'smooth' });
-  });
-}
 
 ///////////////////////////////////////
 // Server Functions
