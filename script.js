@@ -25,8 +25,8 @@ document.addEventListener('keydown', function (e) {
 
 ///////////////////////////////////////
 // Server Functions
-const socket = io('http://localhost:3000');
-const createAccountURL = 'http://localhost:3000/createAccount';
+const socket = io('https://moneytalkspurchasing-2-bkftf2deeyexc3c0.eastus-01.azurewebsites.net');
+const createAccountURL = 'https://moneytalkspurchasing-2-bkftf2deeyexc3c0.eastus-01.azurewebsites.net//createAccount';
 const errorModal = document.querySelector('.errorModal');
 const tryAgain = document.querySelector('.tryAgainBTN');
 
