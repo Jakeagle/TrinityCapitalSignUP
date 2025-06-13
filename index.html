@@ -3,21 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="shortcut icon"
-      type="image/png"
-      href="img/Untitled_design__2_-removebg-preview.png
-      "
-    />
-
-    <link
-      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
-      rel="stylesheet"
-    />
+    <title>Trinity Capital | Sign Up</title>
     <link rel="stylesheet" href="style.css" />
-    <title>Trinity Capital | Better banking</title>
-
     <script defer src="script.js"></script>
     <script
       src="https://cdn.socket.io/4.6.0/socket.io.min.js"
@@ -26,314 +13,7 @@
     ></script>
   </head>
   <body>
-    <header class="header">
-      <nav class="nav">
-        <img
-          src="img/Add_a_heading-removebg-preview.png"
-          alt="Bankist logo"
-          class="nav__logo"
-          id="logo"
-        />
-        <ul class="nav__links">
-          <li class="nav__item">
-            <a class="nav__link" href="#section--1">Perks</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#section--2">Features</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#section--3">Testimonials</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link nav__link--btn btn--show-modal" href="#"
-              >Open account</a
-            >
-          </li>
-        </ul>
-      </nav>
-
-      <div class="header__title">
-        <!-- <h1 onclick="alert('HTML alert')"> -->
-        <h1>
-          Better
-          <!-- Green highlight effect -->
-          <span class="highlight">banking</span>
-          for<br />
-          <span class="highlight">students</span>
-        </h1>
-        <h4>A simpler banking experience for a simpler life.</h4>
-        <button class="btn--text btn--scroll-to">Learn more &DownArrow;</button>
-        <img
-          src="img/Untitled_design__2_-removebg-preview.png"
-          class="header__img"
-          alt="Minimalist bank items"
-        />
-      </div>
-    </header>
-
-    <section class="section" id="section--1">
-      <div class="section__title">
-        <h2 class="section__description">Perks</h2>
-        <h3 class="section__header">
-          Everything you need in a modern bank and more.
-        </h3>
-      </div>
-
-      <div class="features">
-        <img
-          src="img/Untitled design (4).png"
-          data-src="img/Untitled Design (3).png"
-          alt="Computer"
-          class="features__img lazy-img"
-        />
-        <div class="features__feature">
-          <div class="features__icon">
-            <svg>
-              <use xlink:href="img/icons.svg#icon-monitor"></use>
-            </svg>
-          </div>
-          <h5 class="features__header">100% digital bank</h5>
-          <p>
-            Trinity Capital has no physical locations, and runs totally off the
-            cloud, making banking easy and accesible to anyone with an internet
-            connection. Banking has never been so in reach!.
-          </p>
-        </div>
-
-        <div class="features__feature">
-          <div class="features__icon">
-            <svg>
-              <use xlink:href="img/icons.svg#icon-trending-up"></use>
-            </svg>
-          </div>
-          <h5 class="features__header">Watch your money grow</h5>
-          <p>
-            With features like a monthly budget tracker, income and spending
-            sections, and a detailed list of transactions, its never beeen
-            easier to watch your money grow from zero, to absolute hero.
-          </p>
-        </div>
-        <img
-          src="img/grow-lazy.jpg"
-          data-src="img/grow.jpg"
-          alt="Plant"
-          class="features__img lazy-img"
-        />
-
-        <img
-          src="img/card-lazy.jpg"
-          data-src="img/Add a heading (1).png"
-          alt="Credit card"
-          class="features__img lazy-img"
-        />
-        <div class="features__feature">
-          <div class="features__icon">
-            <svg>
-              <use xlink:href="img/icons.svg#icon-credit-card"></use>
-            </svg>
-          </div>
-          <h5 class="features__header">Free checking and savings accounts</h5>
-          <p>
-            Unlike other banks, you get both a free checking and savings account
-            when you sign up.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="section--2">
-      <div class="section__title">
-        <h2 class="section__description">Features</h2>
-        <h3 class="section__header">
-          Everything as simple as possible, but no simpler.
-        </h3>
-      </div>
-
-      <div class="operations">
-        <div class="operations__tab-container">
-          <button
-            class="btn operations__tab operations__tab--1 operations__tab--active"
-            data-tab="1"
-          >
-            <span>01</span>Instant Transfers
-          </button>
-          <button class="btn operations__tab operations__tab--2" data-tab="2">
-            <span>02</span>Speedy Deposits
-          </button>
-          <button class="btn operations__tab operations__tab--3" data-tab="3">
-            <span>03</span>Instant Closing
-          </button>
-        </div>
-        <div
-          class="operations__content operations__content--1 operations__content--active"
-        >
-          <div class="operations__icon operations__icon--1">
-            <svg>
-              <use xlink:href="img/icons.svg#icon-upload"></use>
-            </svg>
-          </div>
-          <h5 class="operations__header">
-            Tranfser money to anyone, instantly! No fees, no funny business.
-          </h5>
-          <p>
-            Whether you're transfering to your own account, or to someone else
-            using our send money system, we guaruntee instant transactions on
-            all these actions.
-          </p>
-        </div>
-
-        <div class="operations__content operations__content--2">
-          <div class="operations__icon operations__icon--2">
-            <svg>
-              <use xlink:href="img/icons.svg#icon-home"></use>
-            </svg>
-          </div>
-          <h5 class="operations__header">
-            Deposit your checks with no hassle, and send your money quickly.
-          </h5>
-          <p>
-            We offer a 24 hour check deposit period meaning your checks clear
-            faster meaning your payments can be made sooner, and bounces are
-            less likely to occur.
-          </p>
-        </div>
-        <div class="operations__content operations__content--3">
-          <div class="operations__icon operations__icon--3">
-            <svg>
-              <use xlink:href="img/icons.svg#icon-user-x"></use>
-            </svg>
-          </div>
-          <h5 class="operations__header">
-            No longer need your account? No problem! Close it instantly.
-          </h5>
-          <p>
-            Should you no longer need our services, we make it easy to detatch
-            from our bank. No cancelaltion fees, no extended service periods, no
-            drama.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="section--3">
-      <div class="section__title section__title--testimonials">
-        <h2 class="section__description">Not sure yet?</h2>
-        <h3 class="section__header">
-          Millions of people are already making their lives better with Trinity
-          Capital.
-        </h3>
-      </div>
-
-      <div class="slider">
-        <div class="slide">
-          <div class="testimonial">
-            <h5 class="testimonial__header">Best financial decision ever!</h5>
-            <blockquote class="testimonial__text">
-              Trinity Capital made things so easy! Their features really help
-              keep you on track, and even plan ahead. I can see all of my bills
-              as well as when they occur, and how much their for, and how much
-              im spending vs earning! Its just awesome.
-            </blockquote>
-            <address class="testimonial__author">
-              <img src="img/user-1.jpg" alt="" class="testimonial__photo" />
-              <h6 class="testimonial__name">Malik Sears</h6>
-              <p class="testimonial__location">San Francisco, USA</p>
-            </address>
-          </div>
-        </div>
-
-        <div class="slide">
-          <div class="testimonial">
-            <h5 class="testimonial__header">
-              The last step to becoming a complete minimalist
-            </h5>
-            <blockquote class="testimonial__text">
-              I hate distractions in life. Anytime something has a little too
-              much going on, I tend to get overwhelmed. So having something
-              simple like Trinity Capital has helped me achieve my goal of total
-              minimalism. No distractions here!.
-            </blockquote>
-            <address class="testimonial__author">
-              <img src="img/user-2.jpg" alt="" class="testimonial__photo" />
-              <h6 class="testimonial__name">Lucy O'hara</h6>
-              <p class="testimonial__location">Dublin, Ireland</p>
-            </address>
-          </div>
-        </div>
-
-        <div class="slide">
-          <div class="testimonial">
-            <h5 class="testimonial__header">
-              Finally free from old-school banks
-            </h5>
-            <blockquote class="testimonial__text">
-              Old school banks have always been a pain. From the paperwork, to
-              the waiting periods, to the customer service, I dread all of it.
-              Trinity Capital alleviates all of that. I love the new way they do
-              things, and I wouldnt go to another bank if you paid me to.
-            </blockquote>
-            <address class="testimonial__author">
-              <img src="img/user-3.jpg" alt="" class="testimonial__photo" />
-              <h6 class="testimonial__name">Guillermo Sanchez</h6>
-              <p class="testimonial__location">New York City, USA</p>
-            </address>
-          </div>
-        </div>
-
-        <button class="slider__btn slider__btn--left">&larr;</button>
-        <button class="slider__btn slider__btn--right">&rarr;</button>
-        <div class="dots"></div>
-      </div>
-    </section>
-
-    <section class="section section--sign-up">
-      <div class="section__title">
-        <h3 class="section__header">
-          Experience these amazing features today! You wont be dissapointed
-        </h3>
-      </div>
-      <button class="btn btn--show-modal">Open your free account today!</button>
-    </section>
-
-    <footer class="footer">
-      <ul class="footer__nav">
-        <li class="footer__item">
-          <a class="footer__link" href="#">About</a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link" href="#">Pricing</a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link" href="#">Terms of Use</a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link" href="#">Privacy Policy</a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link" href="#">Careers</a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link" href="#">Blog</a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link" href="#">Contact Us</a>
-        </li>
-      </ul>
-
-      <p class="footer__copyright">
-        &copy; Copyright by
-        <a
-          class="footer__link twitter-link"
-          target="_blank"
-          href="https://fergusonsoftwaresolutions.net"
-          >FERGUSON SOFTWARE SOLUTIONS, LLC</a
-        >. Trinity Capital is an EDUCATIONAL PRODUCT. NOT A REAL BANK, NO REAL
-        FUNDS EXCHANGED.
-      </p>
-    </footer>
-
-    <div class="modal hidden">
-      <button class="btn--close-modal">&times;</button>
+    <div class="modal">
       <h2 class="modal__header">
         Open your bank account <br />
         in just <span class="highlight">5 minutes</span>
@@ -343,7 +23,7 @@
         <input type="text" class="firstNameInput" />
         <label>Last Name</label>
         <input type="text" class="lastNameInput" />
-        <label>Access Code</label>
+        <label>School Code</label>
         <input type="text" class="schoolCodeInput" />
         <label>Today's Date</label>
         <input type="date" class="dateInput" />
@@ -354,17 +34,13 @@
         <button class="btn createBTN">Next step &rarr;</button>
       </form>
     </div>
-    <div class="overlay hidden"></div>
-
-    <!-- <script src="script.js"></script> -->
+    <dialog class="baseModal errorModal" id="errorDialog" style="display: none">
+      <h1>School code not valid</h1>
+      <h1>Please Try Again</h1>
+      <button class="tryAgainBTN">
+        <a href="#" class="buttonClass">Try Again</a>
+      </button>
+    </dialog>
+    <dialog class="baseModal" id="baseDialog" style="display: none"></dialog>
   </body>
-
-  <dialog class="baseModal errorModal">
-    <h1>School code not valid</h1>
-    <h1>Please Try Again</h1>
-
-    <button class="tryAgainBTN">
-      <a href="#" class="buttonClass">Try Again</a>
-    </button>
-  </dialog>
 </html>
