@@ -36,7 +36,12 @@ socket.on('noSchoolCodeFound', modal => {
 });
 
 socket.on('creationSuccesful', data => {
-  window.location.replace(data.redirectUrl);
+  if (data.isTeacher && data.oauth2Url) {
+    // Do nothing here; modal will be shown by createProfile()
+    return;
+  } else {
+    window.location.replace(data.redirectUrl);
+  }
 });
 
 const firstNameInput = document.querySelector('.firstNameInput');
@@ -46,6 +51,9 @@ const createBTN = document.querySelector('.createBTN');
 const inputDate = document.querySelector('.dateInput');
 const userName = document.querySelector('.usernameInput');
 const PIN = document.querySelector('.pinInput');
+const teacherOauthModal = document.getElementById('teacher-oauth-modal');
+const googleOauthBtn = document.getElementById('google-oauth-btn');
+const microsoftOauthBtn = document.getElementById('microsoft-oauth-btn');
 
 createBTN.addEventListener('click', function (e) {
   e.preventDefault();
@@ -75,5 +83,27 @@ async function createProfile() {
       ],
     }),
   });
+  const data = await res.json();
+  if (data.isTeacher && data.oauth2Url) {
+    // Show the modal for email provider selection
+    teacherOauthModal.style.display = 'flex';
+    teacherOauthModal.showModal();
+    // Google button click handler
+    googleOauthBtn.onclick = () => {
+      console.log('Google OAuth button clicked');
+      // Always open the Google OAuth2 link in a new tab
+      window.open(data.oauth2Url, '_blank', 'noopener');
+      teacherOauthModal.close();
+    };
+    // Microsoft button (not implemented)
+    microsoftOauthBtn.onclick = () => {
+      alert('Microsoft email connection is not yet implemented.');
+    };
+    return;
+  }
+  if (data.redirectUrl) {
+    window.location.replace(data.redirectUrl);
+    return;
+  }
   console.log('COMPLETE');
 }
