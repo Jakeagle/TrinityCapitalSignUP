@@ -33,6 +33,59 @@
         <input type="password" class="pinInput" />
         <button class="btn createBTN">Next step &rarr;</button>
       </form>
+      <!-- Teacher OAuth2 Email Connect Section (modal, hidden by default) -->
+      <dialog id="teacher-oauth-modal" class="baseModal" style="display: none">
+        <h2>Connect your school email</h2>
+        <div
+          style="
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            align-items: center;
+            margin-top: 2rem;
+          "
+        >
+          <button
+            id="microsoft-oauth-btn"
+            class="btn"
+            style="
+              background-color: #107c10;
+              color: white;
+              display: flex;
+              align-items: center;
+              gap: 0.5rem;
+              min-width: 220px;
+            "
+          >
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg"
+              alt="Microsoft"
+              style="
+                height: 24px;
+                background: white;
+                border-radius: 3px;
+                padding: 2px;
+              "
+            />
+            Microsoft
+          </button>
+          <button
+            id="google-oauth-btn"
+            class="btn"
+            style="
+              background-color: white;
+              color: #444;
+              border: 1px solid #ccc;
+              display: flex;
+              align-items: center;
+              gap: 0.5rem;
+              min-width: 220px;
+            "
+          >
+            Google
+          </button>
+        </div>
+      </dialog>
     </div>
     <dialog class="baseModal errorModal" id="errorDialog" style="display: none">
       <h1>School code not valid</h1>
