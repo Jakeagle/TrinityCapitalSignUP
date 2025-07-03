@@ -25,8 +25,8 @@ document.addEventListener('keydown', function (e) {
 
 ///////////////////////////////////////
 // Server Functions
-const socket = io('https://moneytalksregistration-cfhnanfmasc7d0e8.eastus-01.azurewebsites.net');
-const createAccountURL = 'https://moneytalksregistration-cfhnanfmasc7d0e8.eastus-01.azurewebsites.net/createAccount';
+const socket = io('https://tcregistrationserver-production.up.railway.app');
+const createAccountURL = 'https://tcregistrationserver-production.up.railway.app/createAccount';
 const errorModal = document.querySelector('.errorModal');
 const tryAgain = document.querySelector('.tryAgainBTN');
 
